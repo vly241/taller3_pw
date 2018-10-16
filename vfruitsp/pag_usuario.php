@@ -22,10 +22,10 @@
 			<table class="table table-bordered">
 				<tr>
 					<th>Id</th>
-					<th>Nombre</th>
-					<th>apellido</th>
+					<th>USUARIO</th>
+					<th>NOMBRE Y APELLIDO</th>
 					
-					<th>Opciones</th>
+					<th>OPCIONES</th>
 				</tr>
 						
 	<?php
@@ -43,8 +43,8 @@
 		<td>
 				<a class='btn btn-primary' href="./usuario/mostrar_usuarios.php?id=<?php  echo $f['id'];?>"><i class='fa fa-search'></i> Ver</a>
 
-				<a class='btn btn-warning' href='edit.php'><i class='fa fa-edit'></i> Editar</a>
-				<a class='btn btn-danger' href='delete.php'><i class='fa fa-trash'></i> Eliminar</a>
+				<a class='btn btn-warning' href='./usuario/editar_usuarios.php?id=<?php  echo $f['id'];?>'><i class='fa fa-edit'></i> Editar</a>
+				<a class='btn btn-danger' href='./usuario/eliminar_usuarios.php?id=<?php  echo $f['id'];?>'><i class='fa fa-trash'></i> Eliminar</a>
 			</td>
 		</tr>
  <?php
