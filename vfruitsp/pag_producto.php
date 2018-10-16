@@ -13,10 +13,15 @@
 	<header>
 	     
 		<h1>Carrito De Compras</h1>
+		
 		<a href="./carrito_compra.php" title="ver carrito de compras">
 			<img src="img/c.png">
 		</a>
 	</header>
+	<center><a href="./producto/registro_prod.php" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Añadir Nuevo usuario</a>
+	<a href="principal.php" class="btn btn-success">Ir Atrás</a>
+	</center>
+		
 	<section>
 		
 	<?php
@@ -34,14 +39,14 @@
     <a class='btn btn-primary' href="./producto/detalles.php?id=<?php  echo $f['id'];?>"><i class='fa fa-search'></i> Ver</a>
 
 				<a class='btn btn-warning' href='edit.php'><i class='fa fa-edit'></i> Editar</a>
-				<a class='btn btn-danger' href='delete.php'><i class='fa fa-trash'></i> Eliminar</a>
+				<a class='btn btn-danger' href='./producto/eliminar_producto.php?id=<?php  echo $f['id'];?>'><i class='fa fa-trash'></i> Eliminar</a>
     </center>
   </div>
  <?php
   }
  ?>
 		
-		
+	
 
 		
 	</section>

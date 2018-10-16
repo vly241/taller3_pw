@@ -67,13 +67,15 @@
     <meta charset="utf-8"/>
     <title>Carrito de Compras</title>
    <link rel="stylesheet" type="text/css" href="./css/compras.css">
+   	<link rel="stylesheet" href="./css/bootstrap.min.css" />
+
  <script type="text/javascript"  href="./js/scripts.js"></script>
 </head>
 <body>
  <header>
   <h1>Carrito de Compras</h1>
   <a href="./carrito_compra.php" title="ver carrito de compras">
-   <img src="./img/c.png">
+   <img src="img/c.png">
   </a>
  </header>
  <section>
@@ -105,7 +107,8 @@
    echo '<center><h2>Total: '.$total.'</h2></center>';
 
   ?> 
-  <center><a href="pag_producto.php">Ver catalogo</a></center>
+  <center><a href="pag_producto.php" class="btn btn-success">Ver catalogo</a></center>
+  <a href="principal.php" class="btn btn-success">principio</a>
  </section>
 </body>
 </html>
