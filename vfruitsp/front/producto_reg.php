@@ -36,7 +36,7 @@
    
                  <label class="control-label col-sm-2" for="email">IMAGEN:</label>
                  <div class="col-sm-10">
-                   <input type="text" class="form-control" name="imagen" placeholder="nombre de la imagen ejemplo:limon.jpg"required>
+                   <input type="FILE" class="form-control" name="imagen" placeholder="nombre de la imagen ejemplo:limon.jpg"required>
                  </div>
                </div>
                

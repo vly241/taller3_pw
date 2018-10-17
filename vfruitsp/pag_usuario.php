@@ -1,22 +1,44 @@
 <?php session_start();
+
         
+	
+	$where = "";
+	
+	if(!empty($_POST))
+	{
+		$valor = $_POST['campo'];
+		if(!empty($valor)){
+			$where = "WHERE apellido LIKE '%$valor'";
+		}
+	}
+	
+	
 ?>
 
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Index: usuarios</title>
 	<!-- Incluir Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<!-- Incluir Fontawesome -->
 	<link rel="stylesheet" href="css/fontawesome.min.css" />
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
 </head>
 <body>
 	<div class="container">
 		<div class="header">
 			<h1>Listado de usuarios</h1>
 			<a href="cerrar_registro.php" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Añadir Nuevo usuario</a>
+			<div class="row">
+				
+				
+				<form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
+					<b>Nombre: </b><input type="text" id="campo" name="campo" />
+					<input type="submit" id="enviar" name="enviar" value="Buscar" class="btn btn-info" />
+				</form>
+			</div>
 		</div>
 		<section>
 			<table class="table table-bordered">
